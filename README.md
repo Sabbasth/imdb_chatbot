@@ -1,4 +1,4 @@
-# IMDB show planner
+# TV show planner
 This simple webhook will look for the TV show you specify and find the the date for the next episode on air
 
 # Contributing
