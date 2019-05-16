@@ -71,6 +71,7 @@ def test_show_next_1(requests_mock):
         show_text="FAKE_SHOW"
     ) == '{"fulfillmentText": "' + text + '"}'
 
+
 def test_show_next_2(requests_mock):
     '''Test if no next show
     '''
