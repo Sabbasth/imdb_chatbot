@@ -42,7 +42,7 @@ lint:
 
 test: lint unittest
 
-testenv:
+testenv: env
 	@${VENV_BIN}/pip3 install -r test_requirements.txt
 
 unittest:

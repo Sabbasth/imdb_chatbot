@@ -1,0 +1,26 @@
+version: 2.1
+
+jobs:
+  statictests:
+    docker:
+      - image: circleci/python:3.7.3
+
+    steps:
+      - checkout
+      - run:
+          name: Create env
+          command: make testenv
+
+      - run:
+          name: Running linting
+          command: make lint
+
+      - run:
+          name: Running pytest
+          command: make unittest
+
+workflows:
+  version: 2
+  tests:
+    jobs:
+      - statictests
